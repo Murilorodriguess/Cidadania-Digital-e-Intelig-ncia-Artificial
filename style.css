@@ -93,3 +93,8 @@ footer {
     margin-bottom: 10px;
     object-fit: cover;
 }
+.card button {
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+}
