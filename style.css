@@ -87,3 +87,9 @@ footer {
     background: #111827;
     margin-top: 40px;
 }
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
