@@ -286,3 +286,65 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania Digital & IA - ConexãoÉtica</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho com o Alternador de Temas -->
+        <header>
+            <div class="logo">ConexãoÉtica</div>
+            <button class="theme-btn" id="theme-toggle" onclick="toggleTheme()">Mudar Tema 🌗</button>
+        </header>
+
+        <!-- Seção Principal Informativa -->
+        <main>
+            <h1>Cidadania Digital na Era da IA</h1>
+            <p class="subtitle">Navegando com ética, segurança e responsabilidade no futuro automatizado.</p>
+
+            <div class="pilares-grid">
+                <div class="pilar-card">
+                    <h3>🔒 Privacy & Dados</h3>
+                    <p>Controle total sobre sua pegada digital e a proteção estrita de informações pessoais contra coletas automatizadas invasivas.</p>
+                </div>
+                <div class="pilar-card">
+                    <h3>⚖️ Ética em IA</h3>
+                    <p>Desenvolvimento e uso de algoritmos transparentes e auditáveis que combatem ativamente vieses históricos e discriminações.</p>
+                </div>
+                <div class="pilar-card">
+                    <h3>🌍 Inclusão Digital</h3>
+                    <p>Garantir que os avanços socioeconômicos e educacionais da automação sejam universalmente acessíveis a todas as comunidades.</p>
+                </div>
+            </div>
+
+            <!-- Área do Quiz Dinâmico -->
+            <section class="quiz-section">
+                <h2>🧠 Desafio Cidadania Digital & IA</h2>
+                <div id="quiz-box">
+                    <h3 id="question-title">Carregando pergunta...</h3>
+                    <div class="options-list" id="options-box"></div>
+                    <div class="feedback-container" id="feedback-box"></div>
+                    <div class="control-btns">
+                        <button class="action-btn" id="next-btn" style="display: none;" onclick="loadNextQuestion()">Avançar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2026 ConexãoÉtica. Todos os direitos reservados.
+        </footer>
+    </div>
+
+    <!-- Vinculação do arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+
