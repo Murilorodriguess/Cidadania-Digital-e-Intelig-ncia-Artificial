@@ -1,134 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cidadania Digital & IA - ConexãoÉtica</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cidadania Digital e Inteligência Artificial</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <div class="app-container">
-        <!-- Cabeçalho com Alternador de Tema -->
-        <header>
-            <div class="logo">Conexão<span>Ética</span></div>
-            <button id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema visual">Mudar Tema 🌗</button>
-        </header>
 
-        <main>
-            <!-- Seção Principal -->
-            <section class="hero-section">
-                <h1>Cidadania Digital na Era da IA</h1>
-                <p>Navegando com ética, segurança e responsabilidade no futuro automatizado.</p>
-            </section>
+<header>
+    <div class="container">
+        <h1>🌐 Cidadania Digital & Inteligência Artificial</h1>
+        <p>Educação, ética e tecnologia no mundo moderno</p>
 
-            <!-- Carrossel Visual/Galeria Temática -->
-            <section class="image-gallery-section">
-                <h2>📸 Galeria Conceitual: Tecnologia e Sociedade</h2>
-                <div class="image-carousel-container">
-                    <div class="carousel-track">
-                        <div class="carousel-image-card">
-                            <img src="https://unsplash.com" alt="Conceito abstrato de inteligência artificial de rede neural de dados digitais">
-                            <p class="image-caption">Redes Neurais e Tomada de Decisão</p>
-                        </div>
-                        <div class="carousel-image-card">
-                            <img src="https://unsplash.com" alt="Pessoa interagindo com painel digital móvel sobre segurança de dados cibernéticos">
-                            <p class="image-caption">Pegada Digital e Privacidade de Dados</p>
-                        </div>
-                        <div class="carousel-image-card">
-                            <img src="https://unsplash.com" alt="Educação e letramento digital com pessoas trabalhando juntas em computadores">
-                            <p class="image-caption">Inclusão e Letramento Computacional</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cidadania">Cidadania Digital</a>
+            <a href="#ia">Inteligência Artificial</a>
+            <a href="#etica">Ética</a>
+            <a href="#seguranca">Segurança</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </div>
+</header>
 
-            <!-- Pilares Informativos Expandidos (6 Seções) -->
-            <section class="pillars-grid">
-                <div class="info-card">
-                    <div class="card-icon">🔒</div>
-                    <h3>Privacy & Dados</h3>
-                    <p>Controle total sobre sua pegada digital e a proteção estrita de informações pessoais contra coletas invasivas.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-icon">⚖️</div>
-                    <h3>Ética em IA</h3>
-                    <p>Desenvolvimento e uso de algoritmos transparentes que combatem ativamente vieses históricos e discriminações.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-icon">🌍</div>
-                    <h3>Inclusão Digital</h3>
-                    <p>Garantir que os avanços socioeconômicos e educacionais da automação sejam acessíveis a todas as comunidades.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-icon">🕵️‍♂️</div>
-                    <h3>Combate à Desinformação</h3>
-                    <p>Desenvolver pensamento crítico contra conteúdos sintéticos e manipulados, como deepfakes e notícias geradas em massa.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-icon">💼</div>
-                    <h3>Futuro do Trabalho</h3>
-                    <p>Preparação profissional e requalificação para um mercado híbrido focado na colaboração saudável entre humanos e ferramentas de IA.</p>
-                </div>
-                <div class="info-card">
-                    <div class="card-icon">🎨</div>
-                    <h3>Propriedade Intelectual</h3>
-                    <p>Discussão ética sobre direitos autorais e remuneração de criadores cujas obras treinam modelos generativos.</p>
-                </div>
-            </section>
+<section id="inicio" class="hero">
+    <h2>Bem-vindo ao aprendizado digital</h2>
+    <p>
+        Este site explica como a tecnologia e a Inteligência Artificial estão transformando o mundo
+        e como podemos agir de forma responsável no ambiente digital.
+    </p>
+</section>
 
-            <!-- Seção Interativa do Quiz Expandido -->
-            <section class="quiz-box">
-                <div class="quiz-header">
-                    <h2>🧠 Desafio Cidadania Digital & IA</h2>
-                    <div class="progress-container">
-                        <span id="progress-text">Pergunta 1 de 7</span>
-                        <div class="progress-bar-bg">
-                            <div id="progress-bar-fill"></div>
-                        </div>
-                    </div>
-                </div>
+<section id="cidadania">
+    <h2>📱 Cidadania Digital</h2>
 
-                <div id="quiz-workspace" class="fade-in">
-                    <h3 id="question-text">Carregando pergunta...</h3>
-                    <div id="options-container" class="options-grid"></div>
-                    <div id="feedback-panel" class="feedback-card"></div>
-                    <div class="action-row">
-                        <button id="next-btn" onclick="nextQuestion()">Avançar ➜</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Formulário de Contato e Dúvidas -->
-            <section class="contact-section">
-                <h2>✉️ Central de Dúvidas Éticas</h2>
-                <p>Tem dúvidas sobre o uso de dados ou IA? Envie uma mensagem para o nosso comitê fictício.</p>
-                <form id="contact-form" onsubmit="handleFormSubmit(event)">
-                    <div class="form-group">
-                        <label for="user-name">Nome Completo:</label>
-                        <input type="text" id="user-name" required placeholder="Digite seu nome...">
-                    </div>
-                    <div class="form-group">
-                        <label for="user-email">E-mail:</label>
-                        <input type="email" id="user-email" required placeholder="Exemplo: voce@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="user-message">Sua Mensagem ou Caso Ético:</label>
-                        <textarea id="user-message" rows="4" required placeholder="Descreva sua dúvida sobre ética e cidadania digital aqui..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                </form>
-                <div id="form-feedback" class="form-feedback-msg"></div>
-            </section>
-        </main>
-
-        <!-- Rodapé -->
-        <footer>
-            <p>&copy; 2026 ConexãoÉtica. Plataforma Aberta para Conscientização Tecnológica.</p>
-        </footer>
+    <div class="card">
+        <h3>O que é?</h3>
+        <p>
+            Cidadania digital é o uso consciente, seguro e responsável da tecnologia.
+            Envolve respeito, ética e proteção de dados no ambiente online.
+        </p>
     </div>
 
-    <script src="script.js"></script>
+    <div class="card">
+        <h3>Responsabilidades do cidadão digital</h3>
+        <ul>
+            <li>Respeitar outras pessoas na internet</li>
+            <li>Evitar cyberbullying</li>
+            <li>Proteger dados pessoais</li>
+            <li>Verificar informações antes de compartilhar</li>
+        </ul>
+    </div>
+</section>
+
+<section id="ia">
+    <h2>🤖 Inteligência Artificial</h2>
+
+    <div class="card">
+        <h3>Definição</h3>
+        <p>
+            Inteligência Artificial é a área da computação que desenvolve sistemas capazes de
+            simular a inteligência humana.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Onde a IA é usada?</h3>
+        <ul>
+            <li>Redes sociais (recomendação de vídeos)</li>
+            <li>Assistentes virtuais (Siri, Alexa)</li>
+            <li>Mapas e trânsito</li>
+            <li>Chatbots e atendimento automático</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Como a IA aprende?</h3>
+        <p>
+            A IA analisa grandes quantidades de dados, identifica padrões e toma decisões baseadas nesses padrões.
+        </p>
+    </div>
+</section>
+
+<section id="etica">
+    <h2>⚖️ Ética Digital e IA</h2>
+
+    <div class="card">
+        <h3>Por que a ética é importante?</h3>
+        <p>
+            A tecnologia deve ser usada de forma justa, transparente e sem prejudicar pessoas.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Problemas atuais da IA</h3>
+        <ul>
+            <li>Fake news e desinformação</li>
+            <li>Viés algorítmico (discriminação)</li>
+            <li>Deepfakes (vídeos falsos)</li>
+            <li>Uso indevido de dados pessoais</li>
+        </ul>
+    </div>
+</section>
+
+<section id="seguranca">
+    <h2>🔐 Segurança Digital</h2>
+
+    <div class="card">
+        <h3>Dicas importantes</h3>
+        <ul>
+            <li>Use senhas fortes e únicas</li>
+            <li>Ative autenticação em dois fatores</li>
+            <li>Não clique em links suspeitos</li>
+            <li>Não compartilhe dados pessoais</li>
+        </ul>
+    </div>
+
+    <button onclick="fakeNews()">Verificar Conteúdo</button>
+    <p id="resultado"></p>
+</section>
+
+<section id="quiz">
+    <h2>🧠 Quiz Interativo</h2>
+
+    <div class="card">
+        <p><strong>1. O que é cidadania digital?</strong></p>
+
+        <button onclick="quiz(1,true)">Uso responsável da tecnologia</button>
+        <button onclick="quiz(1,false)">Uso sem regras da internet</button>
+    </div>
+
+    <div class="card">
+        <p><strong>2. IA é usada em:</strong></p>
+
+        <button onclick="quiz(2,true)">Recomendações de vídeos</button>
+        <button onclick="quiz(2,false)">Apenas jogos</button>
+    </div>
+
+    <p id="score">Pontuação: 0</p>
+</section>
+
+<footer>
+    <p>Projeto educativo — Cidadania Digital & Inteligência Artificial</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
