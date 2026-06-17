@@ -1,16 +1,22 @@
 let score = 0;
+let answered = {};
 
-/* =========================
-   QUIZ
-========================= */
-function quiz(question, correct) {
+function quiz(id, correct) {
+
+    // impede repetir resposta na mesma pergunta
+    if (answered[id]) return;
+
+    answered[id] = true;
 
     if (correct) {
         score++;
     }
 
     document.getElementById("score").innerText =
-        "Pontuação: " + score;
+        "Pontuação: " + score + " / 10";
+
+    // feedback visual opcional
+    alert(correct ? "✔ Resposta correta!" : "✘ Resposta incorreta!");
 }
 
 /* =========================
