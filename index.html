@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania Digital & IA - ConexãoÉtica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="app-container">
+        <!-- Cabeçalho com Alternador de Tema -->
+        <header>
+            <div class="logo">Conexão<span>Ética</span></div>
+            <button id="theme-toggle" onclick="toggleTheme()" aria-label="Alternar tema visual">Mudar Tema 🌗</button>
+        </header>
+
+        <main>
+            <!-- Seção Principal -->
+            <section class="hero-section">
+                <h1>Cidadania Digital na Era da IA</h1>
+                <p>Navegando com ética, segurança e responsabilidade no futuro automatizado.</p>
+            </section>
+
+            <!-- Carrossel Visual/Galeria Temática -->
+            <section class="image-gallery-section">
+                <h2>📸 Galeria Conceitual: Tecnologia e Sociedade</h2>
+                <div class="image-carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-image-card">
+                            <img src="https://unsplash.com" alt="Conceito abstrato de inteligência artificial de rede neural de dados digitais">
+                            <p class="image-caption">Redes Neurais e Tomada de Decisão</p>
+                        </div>
+                        <div class="carousel-image-card">
+                            <img src="https://unsplash.com" alt="Pessoa interagindo com painel digital móvel sobre segurança de dados cibernéticos">
+                            <p class="image-caption">Pegada Digital e Privacidade de Dados</p>
+                        </div>
+                        <div class="carousel-image-card">
+                            <img src="https://unsplash.com" alt="Educação e letramento digital com pessoas trabalhando juntas em computadores">
+                            <p class="image-caption">Inclusão e Letramento Computacional</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pilares Informativos Expandidos (6 Seções) -->
+            <section class="pillars-grid">
+                <div class="info-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Privacy & Dados</h3>
+                    <p>Controle total sobre sua pegada digital e a proteção estrita de informações pessoais contra coletas invasivas.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">⚖️</div>
+                    <h3>Ética em IA</h3>
+                    <p>Desenvolvimento e uso de algoritmos transparentes que combatem ativamente vieses históricos e discriminações.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Inclusão Digital</h3>
+                    <p>Garantir que os avanços socioeconômicos e educacionais da automação sejam acessíveis a todas as comunidades.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">🕵️‍♂️</div>
+                    <h3>Combate à Desinformação</h3>
+                    <p>Desenvolver pensamento crítico contra conteúdos sintéticos e manipulados, como deepfakes e notícias geradas em massa.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">💼</div>
+                    <h3>Futuro do Trabalho</h3>
+                    <p>Preparação profissional e requalificação para um mercado híbrido focado na colaboração saudável entre humanos e ferramentas de IA.</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Propriedade Intelectual</h3>
+                    <p>Discussão ética sobre direitos autorais e remuneração de criadores cujas obras treinam modelos generativos.</p>
+                </div>
+            </section>
+
+            <!-- Seção Interativa do Quiz Expandido -->
+            <section class="quiz-box">
+                <div class="quiz-header">
+                    <h2>🧠 Desafio Cidadania Digital & IA</h2>
+                    <div class="progress-container">
+                        <span id="progress-text">Pergunta 1 de 7</span>
+                        <div class="progress-bar-bg">
+                            <div id="progress-bar-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz-workspace" class="fade-in">
+                    <h3 id="question-text">Carregando pergunta...</h3>
+                    <div id="options-container" class="options-grid"></div>
+                    <div id="feedback-panel" class="feedback-card"></div>
+                    <div class="action-row">
+                        <button id="next-btn" onclick="nextQuestion()">Avançar ➜</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formulário de Contato e Dúvidas -->
+            <section class="contact-section">
+                <h2>✉️ Central de Dúvidas Éticas</h2>
+                <p>Tem dúvidas sobre o uso de dados ou IA? Envie uma mensagem para o nosso comitê fictício.</p>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="user-name">Nome Completo:</label>
+                        <input type="text" id="user-name" required placeholder="Digite seu nome...">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">E-mail:</label>
+                        <input type="email" id="user-email" required placeholder="Exemplo: voce@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-message">Sua Mensagem ou Caso Ético:</label>
+                        <textarea id="user-message" rows="4" required placeholder="Descreva sua dúvida sobre ética e cidadania digital aqui..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+                <div id="form-feedback" class="form-feedback-msg"></div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2026 ConexãoÉtica. Plataforma Aberta para Conscientização Tecnológica.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
